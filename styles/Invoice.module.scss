@@ -1,14 +1,15 @@
 @import "_mixins.scss";
 
 .invoice {
-  padding: 2rem;
+  padding: 1rem;
   padding-top: 0rem;
+  
 }
 
 .spreadmain {
   @include flexlayout;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 
   .h1 {
     font-weight: bold;
@@ -19,16 +20,16 @@
   @include flexlayout;
 
   p {
-    padding: 0.6rem;
+    padding: 0.2rem;
   }
 }
 
 .spread {
   @include flexlayout;
   p {
-    padding: 0.6rem;
+    padding: 0.2rem;
   }
-  font-size: medium;
+  font-size:medium;
 }
 
 .name {
@@ -42,14 +43,15 @@
 }
 
 .boderline {
-  margin-top: 0rem;
-  margin-bottom: 2rem;
-  border: thick, solid, var(--light-blue);
-  padding: 7rem;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
+
+   border: 3px solid  #e2eeee;
+   height: fit-content;
+   padding: 1rem;
+   width: fit-content;
+   margin-left: 6rem;
+   margin-right: 5rem;
 }
 
 .up {
-  margin-bottom: 10rem;
+  margin-bottom: 1rem;
 }

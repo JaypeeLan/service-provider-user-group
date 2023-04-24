@@ -5,7 +5,7 @@ import Table, { TableHeaders } from "@/components/Table";
 import Link from "next/link";
 
 interface Requests {
-  [key: string]: string;
+  [key: string]: any;
 }
 
 const Services = () => {
@@ -16,7 +16,7 @@ const Services = () => {
       date: "2021-04-20",
       location: "accra, ghana",
       status: "Pending",
-      id: "1",
+      id: 1,
     },
     {
       name: "Farm A",
@@ -24,7 +24,7 @@ const Services = () => {
       date: "2021-04-20",
       location: "accra, ghana",
       status: "Pending",
-      id: "2",
+      id: 2,
     },
     {
       name: "Farm A",
@@ -32,7 +32,7 @@ const Services = () => {
       date: "2021-04-20",
       location: "accra, ghana",
       status: "Pending",
-      id: "3",
+      id: 3,
     },
     {
       name: "Farm A",
@@ -40,7 +40,7 @@ const Services = () => {
       date: "2021-04-20",
       location: "accra, ghana",
       status: "Pending",
-      id: "4",
+      id: 4,
     },
   ];
 

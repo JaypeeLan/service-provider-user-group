@@ -1,35 +1,82 @@
+@import "_mixins.scss";
+
 .cert {
   padding: 0 2rem;
 }
+
+.position{
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+}
+
 .box {
   display: block;
   background-color: rgb(64, 155, 132);
   color: var(--primary-white);
   padding: 1rem;
-  margin: 0rem;
   margin-left: 10rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
   border-radius: 1rem 1rem;
-  align-items: center;
   width: 60%;
-  height: fit-content;
 }
 
 .flex {
-  display: flex;
-  margin: auto;
-}
-.click {
-  padding: 5rem;
-  border-color: var(--primary-white);
-  border: 1px;
+  @include flexlayout;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  
+  //justify-content:left;
 }
 
-.tic {
+.size{
+    height: 2.5rem;
+    width: 8rem;
+}
+
+.click {
+  
+  border: 1px solid var(--primary-white);
+  width: 13rem;
+  height:3.5rem;
+  text-align: center;
+  
+  h2{
+    padding: 1rem;
+    font-weight: normal;
+  }
+  
+}
+
+.title {
   color: rgb(78, 155, 145);
 }
 
-.tics {
+.name {
   color: rgb(21, 105, 94);
   font-weight: bolder;
+}
+
+.topic{
+    color: rgb(78, 155, 145);
+    text-align:center;
+    padding: 1rem;
+}
+
+.container{
+    display: block;
+    border: 3px solid rgb(15, 87, 69);
+    height: fit-content;
+    padding: 1rem;
+    width: fit-content;
+    margin: auto;
+
+    p{
+        padding: 0.3rem 0rem;
+        color: black;
+    }
+}
+
+.shift{
+    padding-right: 4vw;
+    color: rgb(78, 155, 145);
 }

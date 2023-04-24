@@ -5,7 +5,7 @@ import Table, { TableHeaders } from "@/components/Table";
 import Footer from "@/components/Footer";
 
 interface ServiceRend {
-  [key: string]: string;
+  [key: string]: any;
 }
 
 const ServiceRend = () => {
@@ -17,7 +17,7 @@ const ServiceRend = () => {
       quantity: "2",
       unitPrice: "GHS 150",
       total: "GHS 300",
-      id: "1",
+      id: 1,
     },
     {
       service: "Plowing",
@@ -26,7 +26,7 @@ const ServiceRend = () => {
       quantity: "2",
       unitPrice: "GHS 150",
       total: "GHS 300",
-      id: "2",
+      id: 2,
     },
     {
       service: "Plowing",
@@ -35,7 +35,7 @@ const ServiceRend = () => {
       quantity: "2",
       unitPrice: "GHS 150",
       total: "GHS 300",
-      id: "3",
+      id: 3,
     },
   ];
 
@@ -55,14 +55,14 @@ const ServiceRend = () => {
           </div>
           <div className={invoice.spreadmini}>
             <div>
-              <p className={invoice.highlight}>INVOICE #12345</p>
+              <p className={invoice.highlight}>INVOICE </p>
               <p>Issued</p>
               <p>Due</p>
               <p>PO</p>
               <p className={invoice.highlight}>Total</p>
             </div>
             <div>
-              <p className={invoice.highlight}>.</p>
+              <p className={invoice.highlight}>#12345</p>
               <p>Not seen yet</p>
               <p>Feb 26, 2023</p>
               <p>1.0M</p>
@@ -116,7 +116,7 @@ const ServiceRend = () => {
               <hr />
               <p>Total</p>
               <hr />
-              <p>Account Balance</p>
+              <p>Account balance</p>
               <hr />
             </div>
             <div>
